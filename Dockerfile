@@ -9,3 +9,7 @@ RUN npm install
 COPY . .
 
 RUN npm run build
+
+RUN ng s
+
+EXPOSE 3000
