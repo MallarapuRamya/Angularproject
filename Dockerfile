@@ -1,13 +1,6 @@
-FROM node:10-alpine as build-step
-
-RUN mkdir -p /app
-
-WORKDIR /app
-
+FROM node:10-alpine
+WORKDIR /usr/src/app
+COPY package*.json ./
 RUN npm install
-
-COPY package.json /app
-
-COPY . /app
-
+COPY . .
 RUN npm run build --prod
