@@ -4,7 +4,7 @@ RUN mkdir -p /app
 
 WORKDIR /app
 
-COPY /home/mallarapuramya2/angular-app/Angularproject/package.json /app
+COPY /Angularproject/package.json /app
 
 RUN npm install
 
