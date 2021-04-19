@@ -2,9 +2,9 @@ FROM node:10-alpine as build-step
 
 RUN mkdir -p /app
 
-WORKDIR /app
+WORKDIR /home/mallarapuramya2/angular-app/Angularproject
 
-COPY /Angularproject/package.json /app
+COPY package.json /app
 
 RUN npm install
 
