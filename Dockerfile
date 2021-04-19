@@ -10,6 +10,6 @@ COPY . .
 
 RUN npm run build
 
-RUN ng s
+CMD ng s
 
 EXPOSE 3000
