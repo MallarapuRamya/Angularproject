@@ -11,5 +11,3 @@ COPY . .
 RUN npm run build
 
 CMD ng s
-
-EXPOSE 3000
